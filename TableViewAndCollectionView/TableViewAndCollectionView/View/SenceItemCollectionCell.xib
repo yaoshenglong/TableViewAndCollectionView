@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SenceItemCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner01" translatesAutoresizingMaskIntoConstraints="NO" id="0BB-2b-C1a">
+                        <rect key="frame" x="10" y="0.0" width="120" height="72"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0BB-2b-C1a" secondAttribute="bottom" id="7LW-ZB-bqb"/>
+                <constraint firstAttribute="trailing" secondItem="0BB-2b-C1a" secondAttribute="trailing" id="Epd-Cf-7Lz"/>
+                <constraint firstItem="0BB-2b-C1a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="OmB-uN-Tce"/>
+                <constraint firstItem="0BB-2b-C1a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uA0-xc-f6A"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="0BB-2b-C1a" id="EOm-L3-5Ax"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner01" width="240" height="144"/>
+    </resources>
+</document>

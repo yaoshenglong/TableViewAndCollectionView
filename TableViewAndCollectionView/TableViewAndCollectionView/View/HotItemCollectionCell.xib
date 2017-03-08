@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HotItemCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item" translatesAutoresizingMaskIntoConstraints="NO" id="N79-3M-biP">
+                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="hqp-3r-pto"/>
+                            <constraint firstAttribute="height" constant="88" id="ilw-TJ-9JA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMp-ws-LDL">
+                        <rect key="frame" x="10" y="5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tMp-ws-LDL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ONa-yg-Pcw"/>
+                <constraint firstItem="N79-3M-biP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cWy-b0-8yW"/>
+                <constraint firstItem="N79-3M-biP" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="vcA-cu-xO6"/>
+                <constraint firstItem="tMp-ws-LDL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="xB4-ht-YOW"/>
+            </constraints>
+            <connections>
+                <outlet property="itemIndexLabel" destination="tMp-ws-LDL" id="OuV-xO-In0"/>
+                <outlet property="thumbImgView" destination="N79-3M-biP" id="VuS-08-HXz"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="item" width="150" height="150"/>
+    </resources>
+</document>

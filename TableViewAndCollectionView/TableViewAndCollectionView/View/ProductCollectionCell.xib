@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_img" translatesAutoresizingMaskIntoConstraints="NO" id="jVZ-dz-PyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="188"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Geg-xJ-RmX">
+                        <rect key="frame" x="0.0" y="188" width="150" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-vh-UR2">
+                                <rect key="frame" x="16" y="14" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-yj-xoj">
+                                <rect key="frame" x="16" y="48" width="35" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EqA-yj-xoj" firstAttribute="leading" secondItem="HtN-vh-UR2" secondAttribute="leading" id="5Oh-cJ-hQg"/>
+                            <constraint firstItem="HtN-vh-UR2" firstAttribute="top" secondItem="Geg-xJ-RmX" secondAttribute="top" constant="14" id="9JB-lz-WcZ"/>
+                            <constraint firstItem="HtN-vh-UR2" firstAttribute="leading" secondItem="Geg-xJ-RmX" secondAttribute="leading" constant="16" id="eKz-Ag-mNe"/>
+                            <constraint firstAttribute="height" constant="75" id="rLB-18-AGl"/>
+                            <constraint firstAttribute="bottom" secondItem="EqA-yj-xoj" secondAttribute="bottom" constant="10" id="rSP-5j-08c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Geg-xJ-RmX" secondAttribute="bottom" id="0jp-vI-pI2"/>
+                <constraint firstItem="jVZ-dz-PyZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Axa-yH-fiw"/>
+                <constraint firstItem="Geg-xJ-RmX" firstAttribute="top" secondItem="jVZ-dz-PyZ" secondAttribute="bottom" id="CcH-ho-ekP"/>
+                <constraint firstItem="Geg-xJ-RmX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hdg-sv-G9u"/>
+                <constraint firstAttribute="trailing" secondItem="Geg-xJ-RmX" secondAttribute="trailing" id="Iex-QK-mqa"/>
+                <constraint firstAttribute="trailing" secondItem="jVZ-dz-PyZ" secondAttribute="trailing" id="Spd-3A-yS7"/>
+                <constraint firstItem="jVZ-dz-PyZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cSO-Pw-rIi"/>
+            </constraints>
+            <connections>
+                <outlet property="productImgView" destination="jVZ-dz-PyZ" id="uOk-x3-StQ"/>
+                <outlet property="subTitleLabel" destination="EqA-yj-xoj" id="BLK-ZV-ONQ"/>
+                <outlet property="titleLabel" destination="HtN-vh-UR2" id="SRL-x1-PLC"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="product_img" width="300" height="375"/>
+    </resources>
+</document>
