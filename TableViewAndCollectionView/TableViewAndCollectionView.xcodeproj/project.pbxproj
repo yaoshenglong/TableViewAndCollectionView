@@ -36,6 +36,9 @@
 		DF3188211E6EB6E100BEC246 /* DYCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3188201E6EB6E100BEC246 /* DYCollectionController.m */; };
 		DF3188251E6EB8D500BEC246 /* SectionHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3188231E6EB8D500BEC246 /* SectionHeaderCollectionCell.m */; };
 		DF3188261E6EB8D500BEC246 /* SectionHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3188241E6EB8D500BEC246 /* SectionHeaderCollectionCell.xib */; };
+		DF31884C1E71340300BEC246 /* DragItemCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31884B1E71340300BEC246 /* DragItemCollectionController.m */; };
+		DF3188511E71367600BEC246 /* DragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31884F1E71367600BEC246 /* DragCollectionViewCell.m */; };
+		DF3188521E71367600BEC246 /* DragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3188501E71367600BEC246 /* DragCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,11 @@
 		DF3188221E6EB8D500BEC246 /* SectionHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderCollectionCell.h; sourceTree = "<group>"; };
 		DF3188231E6EB8D500BEC246 /* SectionHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderCollectionCell.m; sourceTree = "<group>"; };
 		DF3188241E6EB8D500BEC246 /* SectionHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderCollectionCell.xib; sourceTree = "<group>"; };
+		DF31884A1E71340300BEC246 /* DragItemCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragItemCollectionController.h; sourceTree = "<group>"; };
+		DF31884B1E71340300BEC246 /* DragItemCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragItemCollectionController.m; sourceTree = "<group>"; };
+		DF31884E1E71367600BEC246 /* DragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragCollectionViewCell.h; sourceTree = "<group>"; };
+		DF31884F1E71367600BEC246 /* DragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragCollectionViewCell.m; sourceTree = "<group>"; };
+		DF3188501E71367600BEC246 /* DragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DragCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +201,8 @@
 				DF3187F41E6E775700BEC246 /* DYTableViewController.m */,
 				DF31881F1E6EB6E100BEC246 /* DYCollectionController.h */,
 				DF3188201E6EB6E100BEC246 /* DYCollectionController.m */,
+				DF31884A1E71340300BEC246 /* DragItemCollectionController.h */,
+				DF31884B1E71340300BEC246 /* DragItemCollectionController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +237,7 @@
 		DF3187ED1E6E76B900BEC246 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF31884D1E71362800BEC246 /* dragItemCell */,
 				DF31880F1E6EAB8400BEC246 /* CollectionViewInCollection */,
 				DF3187FB1E6E7BF900BEC246 /* CollectionViewInTable */,
 			);
@@ -269,6 +280,16 @@
 				DF3188241E6EB8D500BEC246 /* SectionHeaderCollectionCell.xib */,
 			);
 			name = CollectionViewInCollection;
+			sourceTree = "<group>";
+		};
+		DF31884D1E71362800BEC246 /* dragItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				DF31884E1E71367600BEC246 /* DragCollectionViewCell.h */,
+				DF31884F1E71367600BEC246 /* DragCollectionViewCell.m */,
+				DF3188501E71367600BEC246 /* DragCollectionViewCell.xib */,
+			);
+			name = dragItemCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +403,7 @@
 			files = (
 				DF3188191E6EABD300BEC246 /* SenceSortCollectionViewCell.xib in Resources */,
 				DF3188081E6E941B00BEC246 /* SenceSortCell.xib in Resources */,
+				DF3188521E71367600BEC246 /* DragCollectionViewCell.xib in Resources */,
 				DF3188141E6EABB600BEC246 /* HotItemCollectionViewCell.xib in Resources */,
 				DF31881E1E6EAC5300BEC246 /* ProductCollectionCell.xib in Resources */,
 				DF3188001E6E7C4400BEC246 /* HotItemCollectionCell.xib in Resources */,
@@ -420,10 +442,12 @@
 				DF3188071E6E941B00BEC246 /* SenceSortCell.m in Sources */,
 				DF31880C1E6E962D00BEC246 /* SenceItemCollectionCell.m in Sources */,
 				DF3187B71E6E745800BEC246 /* AppDelegate.m in Sources */,
+				DF31884C1E71340300BEC246 /* DragItemCollectionController.m in Sources */,
 				DF31881D1E6EAC5300BEC246 /* ProductCollectionCell.m in Sources */,
 				DF3187F91E6E778400BEC246 /* TestTableViewCell.m in Sources */,
 				DF3188211E6EB6E100BEC246 /* DYCollectionController.m in Sources */,
 				DF3188251E6EB8D500BEC246 /* SectionHeaderCollectionCell.m in Sources */,
+				DF3188511E71367600BEC246 /* DragCollectionViewCell.m in Sources */,
 				DF3187FF1E6E7C4400BEC246 /* HotItemCollectionCell.m in Sources */,
 				DF3187F01E6E76B900BEC246 /* main.m in Sources */,
 				DF3188181E6EABD300BEC246 /* SenceSortCollectionViewCell.m in Sources */,
@@ -669,6 +693,7 @@
 				DF3187DE1E6E745800BEC246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF3187DF1E6E745800BEC246 /* Build configuration list for PBXNativeTarget "TableViewAndCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +702,7 @@
 				DF3187E11E6E745800BEC246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF3187E21E6E745800BEC246 /* Build configuration list for PBXNativeTarget "TableViewAndCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -685,6 +711,7 @@
 				DF3187E41E6E745800BEC246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

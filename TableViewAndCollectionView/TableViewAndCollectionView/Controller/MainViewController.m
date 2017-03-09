@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DYTableViewController.h"
+#import "DragItemCollectionController.h"
 
 @interface MainViewController ()
 
@@ -31,6 +32,11 @@
 }
 //header
 - (IBAction)showCollectionHeaderView:(id)sender {
+}
+
+- (IBAction)showDragCollectionView:(id)sender {
+    DragItemCollectionController *dragVC = [[DragItemCollectionController alloc] init];
+    [self.navigationController pushViewController:dragVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

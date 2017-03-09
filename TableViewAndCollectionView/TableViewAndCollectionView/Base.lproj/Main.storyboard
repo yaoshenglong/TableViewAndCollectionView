@@ -53,13 +53,27 @@
                                     <action selector="showCollectionHeaderView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rEe-3R-hBF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-8h-QQT">
+                                <rect key="frame" x="119" y="334" width="136" height="30"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.61960784310000006" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="collectionViewDrag">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCollectionHeaderView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z7C-oF-QUF"/>
+                                    <action selector="showDragCollectionView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lIl-1N-Y0s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OQX-4L-KZd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Mg-G5-Mjn"/>
                             <constraint firstItem="ESw-37-2zW" firstAttribute="centerX" secondItem="OQX-4L-KZd" secondAttribute="centerX" id="8li-Zp-glD"/>
+                            <constraint firstItem="MbW-8h-QQT" firstAttribute="top" secondItem="x0C-OZ-F7n" secondAttribute="bottom" constant="34" id="PWs-5y-aaa"/>
                             <constraint firstItem="x0C-OZ-F7n" firstAttribute="top" secondItem="ESw-37-2zW" secondAttribute="bottom" constant="48" id="TjE-Er-pSA"/>
                             <constraint firstItem="OQX-4L-KZd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="VsW-QP-Gmc"/>
+                            <constraint firstItem="MbW-8h-QQT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mnD-P7-Cfr"/>
                             <constraint firstItem="ESw-37-2zW" firstAttribute="top" secondItem="OQX-4L-KZd" secondAttribute="bottom" constant="46" id="t24-jI-1kf"/>
                             <constraint firstItem="x0C-OZ-F7n" firstAttribute="centerX" secondItem="ESw-37-2zW" secondAttribute="centerX" id="wrY-wT-ETq"/>
                         </constraints>
